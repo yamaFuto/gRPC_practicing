@@ -34,3 +34,4 @@ func (s *Server) Primes(in *pb.PrimeRequest, stream pb.CalculatorService_PrimesS
 
 ///handlerとしてすべて返したら、sendstreamを閉じる仕組みを持っている(server側に備わっている)
 // 関数が終わることでserver側のsendStreamを閉じる(sendし終える(関数としての役目を終了する)→sendし終えた後すぐに関数が終了するからセットとしてreturnを切断面とした)
+// sendし終えたら、関数としての役目を終わるという考え方(server側的考え方)→return
