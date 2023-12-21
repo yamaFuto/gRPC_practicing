@@ -8,7 +8,7 @@ package greet;
 // github.com/Clement-Jean/grpc-go-courseはモジュール名
 // このディレクトリにprotocolファイルが作られるかつこの名前のパッケージ名で登録される
 // go⇒モジュール名を認識できる, protoc⇒認識できないため明記
-// わざわざこのようなモジュール名をパスに入れる理由として外部に公開するときにpackageのパス名をしっかりとしておくため
+// わざわざこのようにモジュール名をパスに入れる理由として外部に公開するときにpackageのパス名をしっかりとしておくため
 option go_package = "github.com/Clement-Jean/grpc-go-course/greet/proto";
 
 
