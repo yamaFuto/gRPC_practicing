@@ -32,6 +32,7 @@ func doPrimes(c pb.CalculatorServiceClient) {
 		res, err := stream.Recv()
 
 		// serverからのstreamが途絶えてしまったらcontextがerrorをはいてRecv()を中断さえる
+		// server側の関数の終了→sendの終了
 		if err == io.EOF {
 			break
 		}

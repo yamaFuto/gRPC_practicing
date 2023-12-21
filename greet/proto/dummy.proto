@@ -5,6 +5,8 @@ package greet;
 
 // the name of the package for the generated code
 // we can import with this string
+// github.com/Clement-Jean/grpc-go-courseはモジュール名
+// このディレクトリにprotocolファイルが作られるかつこの名前のパッケージ名で登録される
 option go_package = "github.com/Clement-Jean/grpc-go-course/greet/proto";
 
 

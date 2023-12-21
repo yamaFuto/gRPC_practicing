@@ -19,7 +19,7 @@ func main() {
 	}
 	defer conn.Close()
 
-	// 生成したコードでラッピングすることでシリアライズ、ディスシリアライズなどをする
+	// 生成したコードでラッピングすることでシリアライズ、ディスシリアライズ、stream通信ができるようにする
 	c := pb.NewCalculatorServiceClient(conn)
 
 	// doSum(c)
