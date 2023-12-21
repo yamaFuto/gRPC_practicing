@@ -10,7 +10,7 @@ import "avg.proto";
 import "max.proto";
 import "sqrt.proto";
 
-// handlerを持つserver instanceのひな形を定義
+// handlerを持つserver instance, clientのひな形を定義
 // 引数(request), 返り値(response)
 // stream→どの方向のstreamを使用するのを明記する
 // イニシャライズ、stream操作などを手助けするコードを生成
